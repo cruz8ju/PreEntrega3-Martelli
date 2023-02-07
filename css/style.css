@@ -1,0 +1,229 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Nav bar*/
+
+.padre-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    height: 80px;
+    background-color: rgb(66, 134, 179);
+    align-items: center;
+}
+
+.elemento-nav {
+    font-size: 20px;    
+    margin: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-weight: bolder;
+}
+
+.link {
+    text-decoration: none;
+    color: black;
+}
+
+/* Main */
+
+main {
+    background-color: rgb(180,219,245);
+    height: 90vh;
+    width: 100% ;
+}
+
+
+/* Inicio */
+
+.h1-inicio {
+    font-size: 55px;
+    text-align: center;
+}
+
+h4 {
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+h3 {
+    font-size: 50px;
+    padding-top: 80px;
+}
+
+.inicio-contenido {
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px auto;
+}
+
+.texto-main {
+    font-size: 23px;
+    padding: 50px;
+    text-align: center;
+}
+
+.imagenes-main {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.imagenes-main div {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.imagenes-main div img {
+    border-radius: 10px;
+}
+
+/*Quienes somos */
+
+.lista {
+    text-align: center;
+    font-size: 30px;
+    padding: 30px;
+    list-style: disc;
+    list-style-position: inside;
+}
+
+.elementos-lista {
+    padding: 50px;
+
+}
+
+/* Mitos */
+
+.h1-mitos {
+    font-size: 45px;
+    text-align: center;
+}
+
+.padre-mito-1 {
+    display: flex;
+    flex-direction: row;
+    margin-left: 150px;
+}
+
+.imagen1 {
+    background-color: red;
+    width: 250px;
+    height: 200px;
+}
+
+.texto1 {
+    font-size: xx-large;
+    width: 600px;
+    margin-left: 20px;
+    margin-top: 5px;
+}
+
+.padre-mito-2 {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-right: 150px;
+}
+
+.imagen2 {
+    background-color: red;
+    width: 250px;
+    height: 200px;
+}
+
+.texto2 {
+    font-size: xx-large;
+    width: 600px;
+}
+
+.padre-mito-3 {
+    display: flex;
+    flex-direction: row;
+    margin-left: 150px;
+}
+
+.imagen3 {
+    background-color: red;
+    width: 250px;
+    height: 200px;
+}
+
+.texto3 {
+    font-size: xx-large;
+    width: 600px;
+    margin-left: 20px;
+    margin-top: 5px;
+}
+
+
+/* Consejos útiles */
+
+.h1-consejos {
+    font-size: 35px;
+    text-align: center;
+    padding: 30px;
+
+}
+
+.padre-consejos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hijo-consejos {
+    border: 2px solid black;
+    font-size: 30px;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 30px;
+}
+
+/* Contacto */
+
+.h1-contacto {
+    padding: 30px;
+    text-align: center;
+    font-size: 55px;
+}
+
+.padre-contacto {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+
+.elemento-contacto {
+    font-size: x-large;
+
+}
+
+/* Footer */
+
+.padre-footer {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(66, 134, 179);
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    align-items: center;
+}
+
+.div-footer {
+    color: black;
+    font-weight: bolder;
+    font-size: larger;
+}
