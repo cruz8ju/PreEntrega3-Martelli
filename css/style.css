@@ -6,40 +6,50 @@
 
 /* Nav bar*/
 
-.padre-nav {
-    display: flex;
-    flex-direction: row;
-    justify-content: end;
-    height: 80px;
-    background-color: rgb(66, 134, 179);
-    align-items: center;
-}
-
-.elemento-nav {
-    font-size: 20px;    
-    margin: 10px;
-    padding-left: 30px;
-    padding-right: 30px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+a:hover {
+    color: blue;
     font-weight: bolder;
 }
 
-.link {
-    text-decoration: none;
-    color: black;
+.barra-nav {
+    height: 60px;
+
 }
 
 /* Main */
 
-main {
-    background-color: rgb(180,219,245);
-    height: 90vh;
-    width: 100% ;
+/* Inicio */
+
+.contenedor-inicio {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 15% 75% 1fr;
+    grid-template-areas: 
+        "caja1 caja1"
+        "caja2 caja3"
+        "caja4 caja4"
+    ;
 }
 
 
-/* Inicio */
+.caja1-inicio {
+    grid-area: caja1
+}
+
+.caja2-inicio {
+    grid-area: caja2
+}
+
+.caja3-inicio {
+    grid-area: caja3
+}
+
+.caja4-inicio {
+    grid-area: caja4
+}
+
 
 .h1-inicio {
     font-size: 55px;
@@ -57,24 +67,17 @@ h3 {
     padding-top: 80px;
 }
 
-.inicio-contenido {
-    display: flex;
-    width: 80%;
-    margin: 0 auto;
-    justify-content: space-between;
-    align-items: center;
-    margin: 20px auto;
-}
-
 .texto-main {
     font-size: 23px;
-    padding: 50px;
+    padding: 30px;
     text-align: center;
 }
 
 .imagenes-main {
+    padding: 25px;
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 20px;
 }
 
@@ -87,6 +90,7 @@ h3 {
 .imagenes-main div img {
     border-radius: 10px;
 }
+
 
 /*Quienes somos */
 
@@ -103,6 +107,38 @@ h3 {
 
 }
 
+.contenedor-somos {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 15% 75% 1fr;
+    grid-template-areas: 
+        "caja1b"
+        "caja2b"
+        "caja3b"
+    ;
+}
+
+.caja1-somos {
+    grid-area: caja1b;
+    
+}
+
+.caja2-somos {
+    grid-area: caja2b;
+}
+
+.caja3-somos {
+    grid-area: caja3b;
+}
+
+
+.h1-somos {
+    text-align: center;
+    padding: 40px;
+    font-size: 60;
+}
 /* Mitos */
 
 .h1-mitos {
@@ -215,10 +251,8 @@ h3 {
     display: flex;
     justify-content: center;
     background-color: rgb(66, 134, 179);
-    position: absolute;
-    bottom: 0;
     width: 100%;
-    height: 60px;
+    height: 97px;
     align-items: center;
 }
 
@@ -227,3 +261,65 @@ h3 {
     font-weight: bolder;
     font-size: larger;
 }
+
+
+/* Media querie Inicio */
+
+@media screen and (max-width: 1590px) {
+
+    .imagen-inicio {
+        width: 250px;
+        height: 250px;
+    }
+
+    .texto-main {
+        font-size: 17px;
+    }
+}
+
+@media screen and (max-width: 1050px) {
+
+    .imagen-inicio {
+        width: 200px;
+        height: 200px;
+    }
+
+    .texto-main {
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 773px) {
+    .contenedor-inicio {
+        width: 100%;
+        height: 100%;
+
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 8% 1fr 1fr 8%;
+        grid-template-areas: 
+            "caja1"
+            "caja2"
+            "caja3"
+            "caja4"
+        ;
+    }
+
+    .h1-inicio {
+        font-size: 33px;
+    }
+
+    h4 {
+        font-size: 17px;
+    }
+
+    .texto-main {
+        font-size: 15px;
+        padding: 15px;
+        text-align: center;
+    }
+    
+}
+
+/* Media querie Quienes somos */
+
