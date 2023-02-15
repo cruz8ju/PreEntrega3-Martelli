@@ -32,6 +32,10 @@ main {
     background-color: rgb(252, 246, 238);
 }
 
+.main-contacto {
+    height: 800px;
+}
+
 
 /* Inicio */
 
@@ -275,7 +279,7 @@ h3 {
 .div-footer {
     color: black;
     font-weight: bolder;
-    font-size: larger;
+    font-size: 20px;
 }
 
 
@@ -424,4 +428,39 @@ h3 {
     .lista-somos {
         font-size: 18px;
     }
+}
+
+@media screen and (max-width: 470px) {
+
+    .h1-somos {
+            padding: 60px;
+            font-size: 20px;
+    }
+
+    .lista-somos {
+        font-size: 14px;
+    }
+}
+
+
+/* Media querie footer */
+
+@media screen and (max-width: 470px) {
+    
+    .div-footer {
+        color: black;
+        font-weight: bolder;
+        font-size: 15px;
+    }
+
+}
+
+@media screen and (max-width: 470px) {
+    
+    .div-footer-contacto {
+        color: black;
+        font-weight: bolder;
+        font-size: 15px;
+    }
+
 }
