@@ -271,24 +271,6 @@ h3 {
 
 /* Footer */
 
-.footer-contacto {
-    display: flex;
-    justify-content: center;
-    position: absolute;
-    bottom: 0;
-    background-color: rgb(250, 238, 222);
-    width: 100%;
-    height: 97px;
-    align-items: center;
-}
-
-.div-footer-contacto {
-    color: black;
-    font-weight: bolder;
-    font-size: larger;
-}
-
-
 /* Media querie Inicio */
 
 @media screen and (max-width: 1600px) {
@@ -365,14 +347,15 @@ h3 {
 
     .texto-main {
         font-size: 17px;
-        padding: 10px;
+        padding: 5px;
         text-align: center;
     }
     
     .imagen-inicio {
-        width: 200px;
-        height: 200px;
+        width: 170px;
+        height: 170px;
     }
+
 }
 
 @media screen and (max-width: 470px) {
@@ -382,13 +365,18 @@ h3 {
     }
 
     h4 {
-        font-size: 14px;
+        font-size: 17px;
     }
 
     .texto-main {
-        font-size: 14px;
-        padding: 15px;
+        font-size: 17px;
+        padding: 5px;
         text-align: center;
+    }
+
+    .imagen-inicio {
+        width: 150px;
+        height: 150px;
     }
 }
 
