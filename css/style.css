@@ -365,13 +365,13 @@ h3 {
 
     .texto-main {
         font-size: 17px;
-        padding: 15px;
+        padding: 10px;
         text-align: center;
     }
     
     .imagen-inicio {
-        width: 150px;
-        height: 150px;
+        width: 200px;
+        height: 200px;
     }
 }
 
@@ -382,7 +382,7 @@ h3 {
     }
 
     h4 {
-        font-size: 12px;
+        font-size: 14px;
     }
 
     .texto-main {
@@ -403,7 +403,6 @@ h3 {
 
     .lista-somos {
         font-size: 23px;
-        padding: 
     }
     
 }
