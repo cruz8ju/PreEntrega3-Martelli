@@ -18,6 +18,13 @@ a:hover {
 nav {
   background-color: #1A1E21;
 }
+nav div a {
+  font-size: 20px;
+  text-decoration: none;
+  font-weight: bolder;
+  padding: 10px;
+  margin-right: 10px;
+}
 
 .navbar-colapse-color {
   background-color: #1A1E21;

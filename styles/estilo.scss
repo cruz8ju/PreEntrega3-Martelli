@@ -1,39 +1,7 @@
 @import "imports-scss/globales";
+@import "imports-scss/navbar";
+@import "imports-scss/main";
 @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
-
-/* Nav bar*/
-
-a:hover {
-    font-weight: bolder;
-}
-
-.barra-nav {
-    height: 60px;
-
-}
-
-nav {
-    background-color: #1A1E21;
-}
-
-.navbar-colapse-color {
-    background-color: #1A1E21;
-}
-
-.menuhamb-color {
-    color: white;
-}
-
-/* Main */
-
-main {
-    background-color: rgb(204, 204, 204);
-}
-
-.main-contacto {
-    height: 800px;
-}
-
 
 /* Inicio */
 
