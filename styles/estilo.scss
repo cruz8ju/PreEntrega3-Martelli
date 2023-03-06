@@ -1,44 +1,7 @@
+@import "imports-scss/globales";
+@import "imports-scss/navbar";
+@import "imports-scss/main";
 @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* Nav bar*/
-
-a:hover {
-    font-weight: bolder;
-}
-
-.barra-nav {
-    height: 60px;
-
-}
-
-nav {
-    background-color: #1A1E21;
-}
-
-.navbar-colapse-color {
-    background-color: #1A1E21;
-}
-
-.menuhamb-color {
-    color: white;
-}
-
-/* Main */
-
-main {
-    background-color: rgb(204, 204, 204);
-}
-
-.main-contacto {
-    height: 800px;
-}
-
 
 /* Inicio */
 
@@ -57,15 +20,24 @@ main {
 
 
 .caja1-inicio {
-    grid-area: caja1
+    grid-area: caja1;
+    animation-name: aparece-derecha;
+    animation-duration: 1s;
+    animation-delay: 0,5s;
 }
 
 .caja2-inicio {
-    grid-area: caja2
+    grid-area: caja2;
+    animation-name: aparece-izquierda;
+    animation-duration: 2s;
+    animation-delay: 0,5s;
 }
 
 .caja3-inicio {
-    grid-area: caja3
+    grid-area: caja3;
+    animation-name: aparece-derecha;
+    animation-duration: 2s;
+    animation-delay: 0,5s;
 }
 
 .caja4-inicio {
@@ -820,3 +792,24 @@ h3 {
 
 }
 
+@keyframes aparece-derecha {
+    0% {
+        opacity: 0;
+        transform: scale(1) translateX(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1) translate(1);
+    }
+}
+
+@keyframes aparece-izquierda {
+    0% {
+        opacity: 0;
+        transform: scale(1) translate(-40px);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1) translate(1);
+    }
+}
