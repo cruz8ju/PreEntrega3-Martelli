@@ -20,15 +20,24 @@
 
 
 .caja1-inicio {
-    grid-area: caja1
+    grid-area: caja1;
+    animation-name: aparece-derecha;
+    animation-duration: 1s;
+    animation-delay: 0,5s;
 }
 
 .caja2-inicio {
-    grid-area: caja2
+    grid-area: caja2;
+    animation-name: aparece-izquierda;
+    animation-duration: 2s;
+    animation-delay: 0,5s;
 }
 
 .caja3-inicio {
-    grid-area: caja3
+    grid-area: caja3;
+    animation-name: aparece-derecha;
+    animation-duration: 2s;
+    animation-delay: 0,5s;
 }
 
 .caja4-inicio {
@@ -781,4 +790,26 @@ h3 {
         font-size: 15px;
     }
 
+}
+
+@keyframes aparece-derecha {
+    0% {
+        opacity: 0;
+        transform: scale(1) translateX(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1) translate(1);
+    }
+}
+
+@keyframes aparece-izquierda {
+    0% {
+        opacity: 0;
+        transform: scale(1) translate(-40px);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1) translate(1);
+    }
 }
