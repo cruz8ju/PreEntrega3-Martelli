@@ -43,12 +43,14 @@ main {
   height: 800px;
 }
 
+/* Colores */
+/* Mixin */
 /* Inicio */
 .contenedor-inicio {
   width: 100%;
   height: 100vh;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: auto auto;
   grid-template-rows: 15% 75% 1fr;
   grid-template-areas: "caja1 caja1" "caja2 caja3" "caja4 caja4";
 }
@@ -81,18 +83,17 @@ main {
 .h1-inicio {
   font-size: 55px;
   text-align: center;
-  padding: 15px;
 }
 
-h4 {
+.h4-inicio {
   text-align: center;
   font-size: 25px;
   font-weight: bold;
 }
 
-h3 {
+.h3-inicio {
   font-size: 50px;
-  padding-top: 80px;
+  padding-top: 25px;
 }
 
 .texto-main {
@@ -184,7 +185,7 @@ h3 {
 .padre-mito-1 {
   display: inline-block;
   margin-left: 150px;
-  border: 3px solid gray;
+  border: 3px solid rgb(168, 165, 165);
   border-radius: 10px;
 }
 
@@ -204,7 +205,7 @@ h3 {
 .padre-mito-2 {
   display: inline-block;
   margin-left: 60%;
-  border: 3px solid gray;
+  border: 3px solid rgb(168, 165, 165);
   border-radius: 10px;
 }
 
@@ -224,7 +225,7 @@ h3 {
 .padre-mito-3 {
   display: inline-block;
   margin-left: 150px;
-  border: 3px solid gray;
+  border: 3px solid rgb(168, 165, 165);
   border-radius: 10px;
   margin-bottom: 30px;
 }
@@ -256,7 +257,7 @@ h3 {
 }
 
 .hijo-consejos {
-  border: 2px solid black;
+  border: 2px solid rgb(44, 44, 44);
   font-size: 30px;
   border-radius: 10px;
   padding: 10px;
@@ -264,8 +265,14 @@ h3 {
 }
 
 /* Contacto */
+.div-contacto {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
 .h1-contacto {
-  padding: 30px;
+  padding: 25px;
   text-align: center;
   font-size: 55px;
   text-decoration: underline;
@@ -281,7 +288,7 @@ h3 {
 }
 
 .input-estilo {
-  background: silver;
+  background: rgb(168, 165, 165);
   border: 1px solid #393939;
   border-radius: 5px 5px 5px 5px;
   color: #393939;
@@ -290,7 +297,7 @@ h3 {
 }
 
 .enviar-estilo {
-  background-color: rgb(230, 225, 225);
+  background-color: rgb(255, 255, 191);
   padding: 10px;
   border: 0;
   border-radius: 20px;
@@ -310,17 +317,15 @@ h3 {
     height: 250px;
   }
   .texto-main {
-    font-size: 15px;
+    font-size: 20px;
   }
 }
 @media screen and (max-width: 1400px) {
   .h1-inicio {
     font-size: 40px;
     text-align: center;
-    padding: 15px;
   }
-  h4 {
-    text-align: center;
+  .h4-inicio {
     font-size: 20px;
     font-weight: bold;
   }
@@ -329,16 +334,28 @@ h3 {
     height: 200px;
   }
   .texto-main {
-    font-size: 14px;
+    font-size: 17px;
   }
 }
 @media screen and (max-width: 1200px) {
   .imagen-inicio {
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
+  }
+  .h3-inicio {
+    font-size: 40px;
   }
   .texto-main {
-    font-size: 13px;
+    font-size: 15px;
+    padding: 20px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .h3-inicio {
+    font-size: 35px;
+  }
+  .texto-main {
+    font-size: 15px;
   }
 }
 @media screen and (max-width: 768px) {
@@ -353,7 +370,7 @@ h3 {
   .h1-inicio {
     font-size: 33px;
   }
-  h4 {
+  .h4-inicio {
     font-size: 17px;
   }
   .texto-main {
@@ -370,7 +387,7 @@ h3 {
   .h1-inicio {
     font-size: 25px;
   }
-  h4 {
+  .h4-inicio {
     font-size: 17px;
   }
   .texto-main {
