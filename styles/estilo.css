@@ -44,6 +44,7 @@ main {
 }
 
 /* Colores */
+/* Map */
 /* Mixin */
 /* Inicio */
 .contenedor-inicio {
@@ -62,7 +63,7 @@ main {
   animation-delay: 0, 5s;
 }
 
-.caja2-inicio {
+.caja2-inicio, .caja3-inicio {
   grid-area: caja2;
   animation-name: aparece-izquierda;
   animation-duration: 2s;
@@ -72,8 +73,6 @@ main {
 .caja3-inicio {
   grid-area: caja3;
   animation-name: aparece-derecha;
-  animation-duration: 2s;
-  animation-delay: 0, 5s;
 }
 
 .caja4-inicio {
@@ -83,17 +82,18 @@ main {
 .h1-inicio {
   font-size: 55px;
   text-align: center;
+  font-weight: 700;
 }
 
 .h4-inicio {
   text-align: center;
   font-size: 25px;
-  font-weight: bold;
 }
 
 .h3-inicio {
   font-size: 50px;
   padding-top: 25px;
+  font-weight: 400;
 }
 
 .texto-main {
@@ -114,13 +114,11 @@ main {
   align-items: center;
   gap: 20px;
 }
-
 .imagenes-main div {
   display: flex;
   justify-content: center;
   gap: 20px;
 }
-
 .imagenes-main div img {
   border-radius: 10px;
 }
@@ -149,10 +147,16 @@ main {
 
 .caja1-somos {
   grid-area: caja1b;
+  animation-name: aparece-derecha;
+  animation-duration: 1s;
+  animation-delay: 0, 5s;
 }
 
 .caja2-somos {
   grid-area: caja2b;
+  animation-name: aparece-izquierda;
+  animation-duration: 2s;
+  animation-delay: 0, 5s;
 }
 
 .caja3-somos {
@@ -163,6 +167,7 @@ main {
   text-align: center;
   padding: 40px;
   font-size: 60;
+  font-weight: 700;
 }
 
 .lista-somos {
@@ -180,6 +185,10 @@ main {
   font-size: 45px;
   text-align: center;
   padding: 20px;
+  font-weight: 700;
+  animation-name: aparece-derecha;
+  animation-duration: 1s;
+  animation-delay: 0, 5s;
 }
 
 .padre-mito-1 {
@@ -187,15 +196,18 @@ main {
   margin-left: 150px;
   border: 3px solid rgb(168, 165, 165);
   border-radius: 10px;
+  animation-name: aparece-izquierda;
+  animation-duration: 2s;
+  animation-delay: 0, 5s;
 }
 
-.imagen1 {
+.imagen1, .imagen3, .imagen2 {
   margin-left: 170px;
   width: 250px;
   height: 250px;
 }
 
-.texto1 {
+.texto1, .texto3, .texto2 {
   font-size: 25px;
   width: 600px;
   margin: auto;
@@ -207,19 +219,9 @@ main {
   margin-left: 60%;
   border: 3px solid rgb(168, 165, 165);
   border-radius: 10px;
-}
-
-.imagen2 {
-  margin-left: 170px;
-  width: 250px;
-  height: 250px;
-}
-
-.texto2 {
-  font-size: 25px;
-  width: 600px;
-  margin: auto;
-  text-align: center;
+  animation-name: aparece-derecha;
+  animation-duration: 2s;
+  animation-delay: 0, 5s;
 }
 
 .padre-mito-3 {
@@ -228,32 +230,29 @@ main {
   border: 3px solid rgb(168, 165, 165);
   border-radius: 10px;
   margin-bottom: 30px;
-}
-
-.imagen3 {
-  margin-left: 170px;
-  width: 250px;
-  height: 250px;
-}
-
-.texto3 {
-  font-size: 25px;
-  width: 600px;
-  margin: auto;
-  text-align: center;
+  animation-name: aparece-izquierda;
+  animation-duration: 2s;
+  animation-delay: 0, 5s;
 }
 
 /* Consejos útiles */
 .h1-consejos {
-  font-size: 35px;
+  font-size: 45px;
   text-align: center;
   padding: 30px;
+  font-weight: 700;
+  animation-name: aparece-derecha;
+  animation-duration: 1s;
+  animation-delay: 0, 5s;
 }
 
 .padre-consejos {
   display: flex;
   flex-direction: column;
   align-items: center;
+  animation-name: aparece-izquierda;
+  animation-duration: 2s;
+  animation-delay: 0, 5s;
 }
 
 .hijo-consejos {
@@ -272,10 +271,12 @@ main {
 }
 
 .h1-contacto {
-  padding: 25px;
-  text-align: center;
   font-size: 55px;
-  text-decoration: underline;
+  text-align: center;
+  animation-name: aparece-derecha;
+  animation-duration: 1s;
+  animation-delay: 0, 5s;
+  font-weight: 700;
 }
 
 .padre-contacto {
@@ -285,6 +286,9 @@ main {
   margin: auto;
   padding: 20px;
   align-items: center;
+  animation-name: aparece-derecha;
+  animation-duration: 1s;
+  animation-delay: 0, 5s;
 }
 
 .input-estilo {
@@ -297,7 +301,7 @@ main {
 }
 
 .enviar-estilo {
-  background-color: rgb(255, 255, 191);
+  background-color: rgb(168, 165, 165);
   padding: 10px;
   border: 0;
   border-radius: 20px;
@@ -455,12 +459,12 @@ main {
   .padre-mito-1 {
     margin-left: 150px;
   }
-  .imagen1 {
+  .imagen1, .imagen2, .imagen3 {
     margin-left: 170px;
     width: 220px;
     height: 220px;
   }
-  .texto1 {
+  .texto1, .texto2, .texto3 {
     font-size: 25px;
     width: 500px;
     margin: auto;
@@ -514,12 +518,12 @@ main {
     border: 3px solid gray;
     border-radius: 10px;
   }
-  .imagen1 {
+  .imagen1, .imagen2, .imagen3 {
     margin-left: 120px;
     width: 190px;
     height: 190px;
   }
-  .texto1 {
+  .texto1, .texto2, .texto3 {
     font-size: 25px;
     width: 450px;
     margin: auto;
@@ -596,12 +600,12 @@ main {
   }
 }
 @media screen and (max-width: 768px) {
-  .imagen1 {
+  .imagen1, .imagen2, .imagen3 {
     margin-left: 60px;
     width: 150px;
     height: 150px;
   }
-  .texto1 {
+  .texto1, .texto2, .texto3 {
     font-size: 17px;
     width: 350px;
     margin: auto;
@@ -634,7 +638,7 @@ main {
   .h1-mitos {
     font-size: 28px;
   }
-  .texto1 {
+  .texto1, .texto2, .texto3 {
     width: 280px;
   }
   .texto2 {
@@ -645,7 +649,7 @@ main {
   }
 }
 @media screen and (max-width: 400px) {
-  .texto1 {
+  .texto1, .texto2, .texto3 {
     width: 240px;
   }
   .texto2 {

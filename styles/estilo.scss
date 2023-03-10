@@ -10,6 +10,14 @@ $gris-claro: rgb(168, 165, 165);
 $negro-oscuro: rgb(44, 44, 44);
 $crema: rgb(255, 255, 191);
 
+/* Map */
+
+$font-weights: (
+    "regular": 400,
+    "media": 550,
+    "negrita": 700,
+);
+
 /* Mixin */
 
 @mixin centrar-vertical {
@@ -52,10 +60,9 @@ $crema: rgb(255, 255, 191);
 }
 
 .caja3-inicio {
+    @extend .caja2-inicio;
     grid-area: caja3;
     animation-name: aparece-derecha;
-    animation-duration: 2s;
-    animation-delay: 0,5s;
 }
 
 .caja4-inicio {
@@ -66,17 +73,19 @@ $crema: rgb(255, 255, 191);
 .h1-inicio {
     font-size: 55px;
     text-align: center;
+    font-weight: map-get($font-weights, negrita)
 }
 
 .h4-inicio {
     text-align: center;
     font-size: 25px;
-    font-weight: bold;
+    font-weight: map-get($font-weights, medio)
 }
 
 .h3-inicio {
     font-size: 50px;
     padding-top: 25px;
+    font-weight: map-get($font-weights, regular)
 }
 
 .texto-main {
@@ -97,16 +106,16 @@ $crema: rgb(255, 255, 191);
     flex-direction: column;
     align-items: center;
     gap: 20px;
-}
+    
+        div {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
 
-.imagenes-main div {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-}
-
-.imagenes-main div img {
-    border-radius: 10px;
+            img {
+                border-radius: 10px;
+            }
+        }
 }
 
 
@@ -140,11 +149,17 @@ $crema: rgb(255, 255, 191);
 
 .caja1-somos {
     grid-area: caja1b;
+    animation-name: aparece-derecha;
+    animation-duration: 1s;
+    animation-delay: 0,5s;
     
 }
 
 .caja2-somos {
     grid-area: caja2b;
+    animation-name: aparece-izquierda;
+    animation-duration: 2s;
+    animation-delay: 0,5s;
 }
 
 .caja3-somos {
@@ -156,6 +171,7 @@ $crema: rgb(255, 255, 191);
     text-align: center;
     padding: 40px;
     font-size: 60;
+    font-weight: map-get($font-weights, negrita)
 }
 
 .lista-somos {
@@ -175,6 +191,11 @@ $crema: rgb(255, 255, 191);
     font-size: 45px;
     text-align: center;
     padding: 20px;
+    font-weight: map-get($font-weights, negrita);
+    animation-name: aparece-derecha;
+    animation-duration: 1s;
+    animation-delay: 0,5s;
+    
 }
 
 .padre-mito-1 {
@@ -182,6 +203,9 @@ $crema: rgb(255, 255, 191);
     margin-left: 150px;
     border: 3px solid $gris-claro;
     border-radius: 10px;
+    animation-name: aparece-izquierda;
+    animation-duration: 2s;
+    animation-delay: 0,5s;
 }
 
 .imagen1 {
@@ -202,19 +226,17 @@ $crema: rgb(255, 255, 191);
     margin-left: 60%;
     border: 3px solid $gris-claro;
     border-radius: 10px;
+    animation-name: aparece-derecha;
+    animation-duration: 2s;
+    animation-delay: 0,5s;
 }
 
 .imagen2 {
-    margin-left: 170px;
-    width: 250px;
-    height: 250px;
+    @extend .imagen1;
 }
 
 .texto2 {
-    font-size: 25px;
-    width: 600px;
-    margin: auto;
-    text-align: center;
+    @extend .texto1;
 }
 
 .padre-mito-3 {
@@ -223,28 +245,30 @@ $crema: rgb(255, 255, 191);
     border: 3px solid $gris-claro;
     border-radius: 10px;
     margin-bottom: 30px;
+    animation-name: aparece-izquierda;
+    animation-duration: 2s;
+    animation-delay: 0,5s;
 }
 
 .imagen3 {
-    margin-left: 170px;
-    width: 250px;
-    height: 250px;
+    @extend .imagen1;
 }
 
 .texto3 {
-    font-size: 25px;
-    width: 600px;
-    margin: auto;
-    text-align: center;
+    @extend .texto1;
 }
 
 
 /* Consejos útiles */
 
 .h1-consejos {
-    font-size: 35px;
+    font-size: 45px;
     text-align: center;
     padding: 30px;
+    font-weight: map-get($font-weights, negrita);
+    animation-name: aparece-derecha;
+    animation-duration: 1s;
+    animation-delay: 0,5s;
 
 }
 
@@ -252,6 +276,9 @@ $crema: rgb(255, 255, 191);
     display: flex;
     flex-direction: column;
     align-items: center;
+    animation-name: aparece-izquierda;
+    animation-duration: 2s;
+    animation-delay: 0,5s;
 }
 
 .hijo-consejos {
@@ -269,10 +296,12 @@ $crema: rgb(255, 255, 191);
 }
 
 .h1-contacto {
-    padding: 25px;
-    text-align: center;
     font-size: 55px;
-    text-decoration: underline;
+    text-align: center;
+    animation-name: aparece-derecha;
+    animation-duration: 1s;
+    animation-delay: 0,5s;
+    font-weight: map-get($font-weights, negrita);
 }
 
 .padre-contacto {
@@ -282,6 +311,9 @@ $crema: rgb(255, 255, 191);
     margin: auto;
     padding: 20px;
     align-items: center;
+    animation-name: aparece-derecha;
+    animation-duration: 1s;
+    animation-delay: 0,5s;  
 }
 
 .input-estilo {
@@ -294,7 +326,7 @@ $crema: rgb(255, 255, 191);
     }
 
 .enviar-estilo {
-    background-color: $crema;
+    background-color: $gris-claro;
     padding: 10px;
     border: 0;
     border-radius: 20px;
