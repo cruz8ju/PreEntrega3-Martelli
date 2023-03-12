@@ -165,7 +165,7 @@ main {
 
 .h1-somos {
   text-align: center;
-  padding: 40px;
+  padding: 50px;
   font-size: 60;
   font-weight: 700;
 }
@@ -174,10 +174,10 @@ main {
   display: flex;
   flex-direction: column;
   gap: 40px;
-  text-align: center;
+  text-align: justify;
   list-style-type: none;
   font-size: 30px;
-  padding: 70px;
+  padding: 20px;
 }
 
 /* Mitos */

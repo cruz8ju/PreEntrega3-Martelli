@@ -169,7 +169,7 @@ $font-weights: (
 
 .h1-somos {
     text-align: center;
-    padding: 40px;
+    padding: 50px;
     font-size: 60;
     font-weight: map-get($font-weights, negrita)
 }
@@ -178,10 +178,10 @@ $font-weights: (
     display: flex;
     flex-direction: column;
     gap: 40px;
-    text-align: center;
-    list-style-type: none;
+    text-align: justify;
+    list-style-type: none; 
     font-size: 30px;
-    padding: 70px;
+    padding: 20px;
     
 }
 
