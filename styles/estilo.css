@@ -387,9 +387,31 @@ main {
     height: 170px;
   }
 }
+@media screen and (max-width: 500px) {
+  .imagen-inicio {
+    width: 200px;
+    height: 200px;
+  }
+  .imagenes-main {
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  .imagenes-main div {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .imagenes-main div img {
+    border-radius: 10px;
+  }
+}
 @media screen and (max-width: 470px) {
   .h1-inicio {
     font-size: 25px;
+    padding: 15px;
   }
   .h4-inicio {
     font-size: 17px;
@@ -398,10 +420,6 @@ main {
     font-size: 17px;
     padding: 5px;
     text-align: center;
-  }
-  .imagen-inicio {
-    width: 150px;
-    height: 150px;
   }
 }
 /* Media querie Quienes somos */
